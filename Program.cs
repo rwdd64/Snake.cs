@@ -167,9 +167,10 @@ namespace Snake
                 else
                     Update();
 
-                if (!running) break;
-
+                
                 Render();
+
+                if (!running) break;
 
                 watch.Start();
                 while (watch.Elapsed.Milliseconds < WAIT_TIME_MS)
